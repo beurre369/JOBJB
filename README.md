@@ -7,7 +7,7 @@
 </div>
 <ol>
   <script>
-  var index = ['사이트 소개','테크트리','잡다한 이야기','질문과 대답','관련 사이트'];
+  var index = ['Learn','Talk','Enjoy','Create','Educate'];
   var i=0;
   while(i < index.length){
     document.write('<li><a href="'+index[i]+'.html">'+index[i]+'</a></li>');

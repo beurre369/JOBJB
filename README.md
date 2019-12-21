@@ -2,52 +2,6 @@
 <head>
 <title>나를육성하자!</title>
 <meta charset="utf-8">
-  
- <p class="themeChange"> <span>테마 변경 : </span>
-<input id="nightday"type="button" value="night" onclick="
-nightdayHandler(this);
-">
-</p>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154161557-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-154161557-1');
-</script>
-<link rel="stylesheet" href="홈 스타일.css">
-<script>
-function nightdayHandler(self){
-  var target = document.querySelector('body');
-if(this.value==='night'){
-  target.style.backgroundColor='black';
-  target.style.color='white';
-  document.querySelector('h1').style.backgroundColor='gray';
-  var alist=document.querySelectorAll('a');
-  var i=0;
-  while(i<alist.length){
-    alist[i].style.color='yellow';
-    i=i+1;
-  }
-  this.value='day';
-}
-else {
-  target.style.backgroundColor='white';
-  target.style.color='black';
-  document.querySelector('h1').style.backgroundColor='skyblue';
-  this.value='night';
-  var alist=document.querySelectorAll('a');
-  var i=0;
-  while(i<alist.length){
-    alist[i].style.color='blue';
-    i=i+1;
-  }
-}
-}
-</script>
 </head>
 
 <body>

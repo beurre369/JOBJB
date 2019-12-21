@@ -32,8 +32,17 @@
     ">
     <h1>관련 사이트</h1>
   <div id="grid">
-    <div>정부 사이트</div>
-    <div>사이트 1</div>
+    <div>소통망</div>
+    <div> <ul>
+      <script>
+        var sites = ['youtube', 'facebook', 'twitter', 'instagram'];
+        var i=0;
+        while(i < sites.length) {
+          document.write('<li>' +sites[i]+ '</li>');
+          i=i+1;
+        }
+      </script>
+    </ul> </div>
   </div>
   <div id="grid">
     <div>민간 사이트</div>

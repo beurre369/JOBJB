@@ -13,32 +13,54 @@
   gtag('config', 'UA-154161557-1');
 </script>
 <link rel="stylesheet" href="홈 스타일.css">
-</head>
-<body>
-  <input id="nightday"type="button" value="night" onclick="
-if(document.querySelector('#nightday').value==='night'){
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
+<script>
+function nightdayHandler(self){
+  var target = document.querySelector('body');
+if(this.value==='night'){
+  target.style.backgroundColor='black';
+  target.style.color='white';
   document.querySelector('h1').style.backgroundColor='gray';
-  document.querySelector('#nightday').value='day'
+  var alist=document.querySelectorAll('a');
+  var i=0;
+  while(i<alist.length){
+    alist[i].style.color='yellow';
+    i=i+1;
+  }
+  this.value='day';
 }
 else {
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
+  target.style.backgroundColor='white';
+  target.style.color='black';
   document.querySelector('h1').style.backgroundColor='skyblue';
-  document.querySelector('#nightday').value='night'
+  this.value='night';
+  var alist=document.querySelectorAll('a');
+  var i=0;
+  while(i<alist.length){
+    alist[i].style.color='blue';
+    i=i+1;
+  }
 }
+}
+</script>
+</head>
+
+<body>
+<p class="themeChange"> <span>테마 변경 : </span>
+<input id="nightday"type="button" value="night" onclick="
+nightdayHandler(this);
 ">
-
-
+</p>
 <h1>잡 스토리</h1>
 <div id="grid">
 <ol>
-  <li><a href="사이트 소개.html">사이트 소개</a></li>
-  <li><a href="테크트리.html">잡 테크트리</a></li>
-  <li><a href="잡다한 이야기.html">잡다한 이야기</a></li>
-  <li><a href="질문과 대답.html">질문과 대답</a></li>
-  <li><a href="관련 사이트.html">관련 사이트</a></li>
+  <script>
+  var index = ['사이트 소개','테크트리','잡다한 이야기','질문과 대답','관련 사이트'];
+  var i=0;
+  while(i < index.length){
+    document.write('<li><a href="'+index[i]+'.html">'+index[i]+'</a></li>');
+    i = i+1;
+  }
+  </script>
 </ol>
 <div id="interview">
 <p>직업은 시대에 흐름에 따라 생겨나고 없어집니다.

@@ -49,7 +49,6 @@ else {
 nightdayHandler(this);
 ">
 </p>
-<h1>잡 스토리</h1>
 <div id="grid">
 <ol>
   <script>

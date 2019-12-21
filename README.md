@@ -1,5 +1,3 @@
-# web1
-<!doctype html>
 <html>
 <head>
 <title>나를육성하자!</title>

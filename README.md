@@ -1,11 +1,10 @@
 
 <body>
-<p class="themeChange"> <span>테마 변경 : </span>
-<input id="nightday"type="button" value="night" onclick="
-nightdayHandler(this);
-">
-</p>
 <div id="grid">
+<div id="interview">
+<p>직업은 시대에 흐름에 따라 생겨나고 없어집니다.
+  이 곳, <span style="font-weight : bold;">잡 스토리</span>에서 직업에 대해 잘 알면 시대의 흐름에 대해 잘 알 수 있습니다.</p>
+</div>
 <ol>
   <script>
   var index = ['사이트 소개','테크트리','잡다한 이야기','질문과 대답','관련 사이트'];
@@ -16,10 +15,6 @@ nightdayHandler(this);
   }
   </script>
 </ol>
-<div id="interview">
-<p>직업은 시대에 흐름에 따라 생겨나고 없어집니다.
-  이 곳, <span style="font-weight : bold;">잡 스토리</span>에서 직업에 대해 잘 알면 시대의 흐름에 대해 잘 알 수 있습니다.</p>
-</div>
 </div>
 
 <div id="disqus_thread"></div>

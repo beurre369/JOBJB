@@ -2,6 +2,13 @@
 <head>
 <title>나를육성하자!</title>
 <meta charset="utf-8">
+  
+ <p class="themeChange"> <span>테마 변경 : </span>
+<input id="nightday"type="button" value="night" onclick="
+nightdayHandler(this);
+">
+</p>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154161557-1"></script>
 <script>
@@ -44,11 +51,6 @@ else {
 </head>
 
 <body>
-<p class="themeChange"> <span>테마 변경 : </span>
-<input id="nightday"type="button" value="night" onclick="
-nightdayHandler(this);
-">
-</p>
 <div id="grid">
 <ol>
   <script>

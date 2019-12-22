@@ -2,7 +2,7 @@
 <body>
 <div id="grid">
 <div id="interview">
-<p> job.</p>
+<p> How can we get the job we want? What job do you have? Do you have a job at work that you want to talk about? Let's share together here.</p>
 </div>
 <ol>
   <script>

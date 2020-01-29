@@ -35,11 +35,14 @@
         padding: 10px;
         text-align: center;
       }
-      .column.side{
+      .column.left{
         width: 25%;
       }
       .column.middle{
         width: 50%;
+      }
+      .column.right{
+        width: 25%;
       }
       .row:after{
         content: "";
@@ -68,15 +71,24 @@
        </script>
     </nav>
     <section class="row">
-      <article class="column side">
+      <article class="column left">
         <h2>Column1</h2>
-        <p>Content</p>
+        <ul>
+          <script> 
+          var index = ['Kmooc', 'Coursera', 'Opentutorials'];
+          var i =0;
+          while(i < index.length){
+            document.write('<a href="'+index[i]+'.html">'+index[i]+'</a>');
+            i = i+1;
+            }
+          </script>
+        </ul>
       </article>
       <article class="column middle">
         <h2>Column2</h2>
         <p>Main Content</p>
       </article>
-      <article class="column side">
+      <article class="column right">
         <h2>Column3</h2>
         <p>Content</p>
       </article>

@@ -1,26 +1,38 @@
+<!doctype html>
 <html>
   <head>
     <title>JOBJB</title>
   </head>
-  
   <body>
     <header>
       <h1>JOBJB</h1>
     </header>
-    <div id="grid">
-      <div id="interview">
-        <p> 강의 리뷰 사이트입니다.</p>
-      </div>
+    <nav>
       <ol>
         <script>
-          var index = ['Job-Story','Play','Lesson-Review'];
-          var i=0;
+          var index = ['Lesson-Review', 'Free-Talk'];
+          var i =0;
           while(i < index.length){
             document.write('<li><a href="'+index[i]+'.html">'+index[i]+'</a></li>');
             i = i+1;
             }
-         </script>
-       </ol>
+        </ol>
+      </script>
+    </nav>
+    <div id="grid">
+      <div id="interview">
+        <p> 강의 리뷰 사이트입니다.</p>
+      </div>
     </div>
+    <footer class = "footer">
+      <script>
+        var index = ['CONTACT'];
+        var i =0;
+        while(i < index.length){
+          document.write('<li><a href="'+index[i]+'.html">'+index[i]+'</a></li>');
+          i = i+1;
+          }
+      </script>
+    </footer>
   </body>
 </html>

@@ -3,6 +3,9 @@
   <head>
     <title>JOBJB</title>
     <style>
+      *{
+        box-sizing: border-box;
+      }
       header{
         background-color : #f1f1f1;
         padding: 20px;
@@ -26,13 +29,24 @@
       }
       .column{
         float: left;
-        width: 33.33%;
-        padding: 15px;
+        padding: 10px;
+        text-align: center;
+      }
+      .column.side{
+        width: 25%;
+      }
+      .column.middle{
+        width: 50%;
       }
       .row:after{
         content: "";
         display: table;
         clear: both;
+      }
+      footer{
+        background-color: #F1F1F1;
+        text-align: center;
+        padding: 10px;
       }
     </style>
   </head>
@@ -51,15 +65,15 @@
        </script>
     </nav>
     <section class="row">
-      <article class="column">
+      <article class="column side">
         <h2>Column1</h2>
         <p>Content</p>
       </article>
-      <article class="column">
+      <article class="column middle">
         <h2>Column2</h2>
         <p>Main Content</p>
       </article>
-      <article class="column">
+      <article class="column side">
         <h2>Column3</h2>
         <p>Content</p>
       </article>

@@ -109,7 +109,7 @@
         var index = ['Lesson-Review', 'Free-Talk'];
         var i =0;
         while(i < index.length){
-          document.write('<a href="'+index[i]+'.html">'+index[i]+'</a>');
+          document.write('<a onclick="fetchPage('+index[i]+')"></a>');
           i = i+1;
           }
        </script>
@@ -134,7 +134,7 @@
       <script>
         var index = ['조직도'];
         var i =0;
-        while(i < index.length){          document.write('<li>'+index[i]+'</li>');
+        while(i < index.length){ document.write('<li>'+index[i]+'</li>');
           i = i+1;
           }
       </script>
@@ -150,5 +150,14 @@
           }
       </script>
     </footer>
+    <script>
+      function fetchPage(name){
+        fetch('name').then(function(response){
+          response.text().then(function(text){
+            document.querySelector('article').innerHTML = text;
+          })
+        });
+      }
+    </script>
   </body>
 </html>

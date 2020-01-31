@@ -105,14 +105,7 @@
         <p>어떤 강의를 듣는지에 따라 우리의 삶이 변하기 때문에, <br>우리는 강의들에 대해 잘 알 필요가 있다.</p>
     </header>
     <nav>
-      <script> 
-        var index = ['Lesson', 'Talk'];
-        var i =0;
-        while(i < index.length){
-          document.write('<a onclick = "fetchPage('+index[i]+')">'+index[i]+'</a>');
-          i = i+1;
-          }
-       </script>
+      <a onclick="fetchPage('Lesson')">Lesson</a>
         <span><input type="text" placeholder="Search.."></span>
     </nav>
     <section class="row">

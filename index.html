@@ -88,14 +88,12 @@
     </style>
   </head>
   <body>
-    
     <header>
       <h1 style="margin-bottom: 0px"><a href = "">JOBJB </a> </h1>
         <h3 style="margin-top: 0px">강의 리뷰 전문 사이트</h3>
         <p>어떤 강의를 듣는지에 따라 우리의 삶이 변하기 때문에, <br>우리는 강의들에 대해 잘 알 필요가 있다.</p>
     </header>
     <nav>
-      <a href = "#!Lesson" onclick="fetchPage('Lesson')">Lesson</a>
         <span><input type="text" placeholder="Search.."></span>
     </nav>
     <section class="row">
@@ -109,23 +107,6 @@
         
         리뷰
         <p>생활코딩은 코딩 뿐만이 아니라 학습에 관한 깊은 통찰을 제시하기 때문에 좋은 강의이다. 그러나 영상으로 강의가 주로 이루어지기 때문에 강의 내용의 수정이 쉽지 않아 업데이트가 늦어지기도 한다. 온라인 강의와 비교했을 때, 오프라인 강의는 매 학기마다 새로 열리고, 글로 쓰여진 강의는 언제든 수정이 가능하다.</p>
-         
-        <script>
-        function fetchPage(name){
-          fetch(name).then(function(response){
-            response.text().then(function(text){
-              document.querySelector('article').innerHTML = text;
-            })
-          });
-        }
-        if(location.hash){
-          fetchPage(location.hash.substr(2));
-        } else {
-          fetchPage('welcome');
-        }
-          
-        </script>
-        
         <article>
     </article>
         
@@ -157,5 +138,19 @@
           }
       </script>
     </footer>
+     <script>
+        function fetchPage(name){
+          fetch(name).then(function(response){
+            response.text().then(function(text){
+              document.querySelector('article').innerHTML = text;
+            })
+          });
+        }
+        if(location.hash){
+          fetchPage(location.hash.substr(2));
+        } else {
+          fetchPage('welcome');
+        }
+        </script>
   </body>
 </html>

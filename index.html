@@ -7,69 +7,21 @@
   </head>
   <body>
     <header>
-      <h1 style="margin-bottom: 0px"><a href = "">JOBJB </a> </h1>
-        <h3 style="margin-top: 0px">Problem-Based-Lesson Review</h3>
+      <h1 style="margin-bottom: 0px"><a href = "">JOBJB</a></h1>
+      <h3 style="margin-top: 0px">Problem-Based-Lesson Review</h3>
     </header>
     <nav>
-        <span><input type="text" placeholder="Search.."></span>
+      <span><input type="text" placeholder="Search.."></span>
     </nav>
     <section class="row">
-      <article class="column left">Lessons
-        <ol id="reviewnav"></ol>
-      </article>
+      <article class="column left">Lessons<ol id="reviewnav"></ol></article>
       <article class="column middle"></article>   
-      <article class="column right">
-        <script>
-          var index = ['별점', '관련 강의'];
-          var i =0;
-          while(i < index.length){
-            document.write('<li>'+index[i]+'</li>');
-            i = i+1;
-            }
-        </script>
-      </article>
+      <article class="column right"><script src="rightcolumn.js"></script></article>
     </section>
     <footer class = "footer">
-      <script>
-        var index = ['Contact'];
-        var i =0;
-        while(i < index.length){
-          document.write('<li><a href="'+index[i]+'.html">'+index[i]+'</a></li>');
-          i = i+1;
-          }
-     </script>
+      <script src="footer.js"></script>
       copyright &copy; jobjb. All rights reserved.
     </footer>
-    <script>
-      function fetchPage(name){
-        fetch(name).then(function(response){
-          response.text().then(function(text){
-            document.querySelector('article.column.middle').innerHTML = text;
-             })
-          });
-        }
-      if(location.hash){
-       fetchPage(location.hash.substr(2));
-      }else{
-        fetchPage('welcome');
-      }
-      fetch('list').then(function(response){
-          response.text().then(function(text){
-            console.log(text);
-            var items = text.split(',');
-            var i =0;
-            var tags = '';
-            while(i<items.length){
-              var item = items[i];
-              item = item.trim();
-              var tag = '<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>';
-              console.log(item);
-              tags = tags + tag;
-              i = i+1;
-            }
-            document.querySelector('#reviewnav').innerHTML = tags;
-             })
-          });
-    </script>                      
+    <script src="fetchpage.js"></script>                      
   </body>
 </html>

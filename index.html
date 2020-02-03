@@ -64,6 +64,18 @@
       }
       fetch('list').then(function(response){
           response.text().then(function(text){
+            console.log(text);
+            var items = text.split('#');
+            var i =0;
+            var tags = '';
+            while(i<items.length){
+              var item = items[i];
+              var tag = '<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>;
+              console.log(item);
+              tags = tags + tag;
+              i = i+1;
+              
+      
             document.querySelector('#reviewnav').innerHTML = text;
              })
           });

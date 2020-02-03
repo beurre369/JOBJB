@@ -14,25 +14,19 @@
         <span><input type="text" placeholder="Search.."></span>
     </nav>
     <section class="row">
-      <article class="column left">
-        Lessons
-        <ol id="reviewnav">
-        </ol>
+      <article class="column left">Lessons
+        <ol id="reviewnav"></ol>
       </article>
-      <article class="column middle">
-        <h1>Review</h1>   
-        <div class="score" style="padding: 2px; border-top: black solid 1px;" >score : 4/5</div>
-      </article>   
+      <article class="column middle"></article>   
       <article class="column right">
-        <div class="relatedclass"></div>
-      <script>
-        var index = ['별점', '관련 강의'];
-        var i =0;
-        while(i < index.length){
-          document.write('<li>'+index[i]+'</li>');
-          i = i+1;
-          }
-      </script>
+        <script>
+          var index = ['별점', '관련 강의'];
+          var i =0;
+          while(i < index.length){
+            document.write('<li>'+index[i]+'</li>');
+            i = i+1;
+            }
+        </script>
       </article>
     </section>
     <footer class = "footer">
@@ -44,6 +38,7 @@
           i = i+1;
           }
      </script>
+      copyright &copy; jobjb. All rights reserved.
     </footer>
     <script>
       function fetchPage(name){

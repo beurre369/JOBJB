@@ -17,22 +17,8 @@
       <article class="column left">
         사이트 바로가기
         <ol>
-          <li><a onclick="
-            fetch('생활코딩').then(function(response){
-            response.text().then(function(text){
-            document.querySelector('article.column.middle').innerHTML = text;
-            })
-            });
-            ">생활코딩</a>
-          </li>
-          <li><a onclick="
-            fetch('산타토익').then(function(response){
-            response.text().then(function(text){
-            document.querySelector('article.column.middle').innerHTML = text;
-            })
-            });
-            ">산타토익</a>
-          </li>
+          <li><a onclick="fetchPage('생활코딩')">생활코딩</a></li>
+          <li><a onclick="fetchPage('산타토익')">생활코딩</a></li>
         </ol>
       </article>
       <article class="column middle">
@@ -65,6 +51,14 @@
           }
      </script>
     </footer>
-  
+    <script>
+      function fetchPage(name){
+        fetch(name).then(function(response){
+          response.text().then(function(text){
+            document.querySelector('article.column.middle).innerHTML = text;
+                                   })
+          });
+        }
+    </script>                      
   </body>
 </html>

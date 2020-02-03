@@ -101,11 +101,12 @@
         수업 바로가기
         <ol>
           <a href="https://opentutorials.org/course/1">생활코딩</a>
+          <a href="https://santatoeic.com/intro">산타토익</a>
         </ol>
       </article>
       <article class="column middle">
         
-        리뷰
+        생활코딩
         <p>생활코딩은 코딩 뿐만이 아니라 학습에 관한 깊은 통찰을 제시하기 때문에 좋은 강의이다. 그러나 영상으로 강의가 주로 이루어지기 때문에 강의 내용의 수정이 쉽지 않아 업데이트가 늦어지기도 한다. 온라인 강의와 비교했을 때, 오프라인 강의는 매 학기마다 새로 열리고, 글로 쓰여진 강의는 언제든 수정이 가능하다.</p>
         <article>
          산타토익
@@ -140,19 +141,6 @@
           }
       </script>
     </footer>
-     <script>
-        function fetchPage(name){
-          fetch(name).then(function(response){
-            response.text().then(function(text){
-              document.querySelector('article').innerHTML = text;
-            })
-          });
-        }
-        if(location.hash){
-          fetchPage(location.hash.substr(2));
-        } else {
-          fetchPage('welcome');
-        }
-        </script>
+
   </body>
 </html>

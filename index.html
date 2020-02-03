@@ -55,8 +55,8 @@
       function fetchPage(name){
         fetch(name).then(function(response){
           response.text().then(function(text){
-            document.querySelector('article.column.middle).innerHTML = text;
-                                   })
+            document.querySelector('article.column.middle').innerHTML = text;
+             })
           });
         }
     </script>                      

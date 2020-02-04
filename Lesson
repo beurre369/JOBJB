@@ -1,4 +1,28 @@
-<h2>LESSON</h2>
-<ol>
-<a>Web Programming</a>
-</ol>
+<!doctype html>
+<html>
+  <head>
+    <title>JOBJB</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="fetch-master/fetch.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 style="margin-bottom: 0px"><a href = "">JOBJB</a></h1>
+      <h3 style="margin-top: 0px">Problem-Based-Lesson Review</h3>
+    </header>
+    <nav>
+      <script src="navigation.js"></script>
+      <span><input type="text" placeholder="Search.."></span>
+    </nav>
+    <section class="row">
+      <article class="column left">Lessons<ol id="reviewnav"></ol></article>
+      <article class="column middle"></article>   
+      <article class="column right"><script src="rightcolumn.js"></script></article>
+    </section>
+    <footer class = "footer">
+      <script src="footer.js"></script>
+      copyright &copy; jobjb. All rights reserved.
+    </footer>
+    <script src="fetchpage.js"></script>                      
+  </body>
+</html>

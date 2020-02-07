@@ -1,4 +1,4 @@
-function fetcMovie(name){
+function fetchMovie(name){
         fetch(name).then(function(response){
           response.text().then(function(text){
             document.querySelector('article.column.middle').innerHTML = text;

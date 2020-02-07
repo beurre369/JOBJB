@@ -1,4 +1,4 @@
-var index = ['Lesson','Career'];
+var index = ['Lesson','Career','Movies','Documentary'];
         var i =0;
         while(i < index.length){
           document.write('<span><a href="'+index[i]+'.html">'+index[i]+'</a></span>');
